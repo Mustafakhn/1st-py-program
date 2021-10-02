@@ -31,7 +31,7 @@ while True:
                 inp = input('what name do you want to see the count of :')
                 occ = data.split(inp)
                 if inp in data:
-                    print('the number of times ', inp, ' is in the file is :', len(occ))
+                    print('the number of times ', inp, ' is in the file is :', len(occ)-1)
                     input('press enter to exit')
                     exit()
                 else:

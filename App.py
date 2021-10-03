@@ -9,12 +9,12 @@ while True:
     fp.close()
     print("input added to", fp.name)
     answer = str(input("do you wnt to add more ? "
-                       " if yes press (y) or press enter for next process. "))
+                       " if yes press (y) or if you want to proceed to the next process press (n). "))
     if 'y' in answer:
         continue
-    else:
+    elif 'n' in answer:
         x = str(
-            input('do you want to check the content of the file and exit if yes press (y) or if you want to proceed to '
+            input('do you want to check the content of the file if yes press (y) or if you want to proceed to '
                   'next process press (n) '))
         fp = open('file1.txt', 'r')
         content = fp.readlines()
@@ -26,7 +26,7 @@ while True:
                 continue
         if x == 'y' or 'n':
             ans = input(
-                'do you want to know the number of times a word is in the file if yes press (y) if no press (n)')
+                'do you want to know the number of times a word is in the file if yes press (y) or if no press (n) to exit.')
             if ans == 'y':
                 inp = input('what name do you want to see the count of :')
                 occ = data.split(inp)
